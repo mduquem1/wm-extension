@@ -22,7 +22,7 @@ jobs:
           npm install
           npm pretest
           npm test
-        uses: SonarSource/sonarcloud-github-action@master
+      - uses: SonarSource/sonarcloud-github-action@master
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
